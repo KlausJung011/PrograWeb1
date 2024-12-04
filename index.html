@@ -1,13 +1,418 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="es">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDream - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="logoAnimacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-  <h1>
-    Hola AMIGO
-  </h1>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand ui-btn" href="index.html">
+                    <img src="/img/paisaje1.gif" alt="Logo" height="80" width="80">
+                    <span>NeoDream</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container-fluid py-5 text-center">
+            <div class="container">
+                <h1 class="display-4 mb-4">Donde el Arte Digital y la Música se Encuentran</h1>
+                <p class="lead mb-4">
+                    Somos un colectivo de artistas digitales y músicos unidos para crear experiencias audiovisuales únicas. 
+                    Desde portadas de álbumes personalizadas hasta visuales para presentaciones en vivo y arte decorativo.
+                </p>
+                <div class="buttons">
+                    <a href="catalogo.html" class="btn btn-dark btn-lg mx-2">Explorar Música</a>
+                    <a href="galeria.html" class="btn btn-outline-dark btn-lg mx-2">Ver Galería de Arte</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel con gifs horizontales -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/SadCarelessFennecfox-size_restricted.gif" class="d-block w-100" alt="..." height="600">
+                    <div class="carousel-caption">
+                        <h2>Autor: Kj011</h2>
+                        <p>Arte digital de diseñadores exclusivos</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/behance2.gif" class="d-block w-100" alt="..." height="600">
+                    <div class="carousel-caption">
+                        <h2>Autor: Alexander Noiet</h2>
+                        <p>Consulte por diseños personalizados</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/panoramica3.gif" class="d-block w-100" alt="..." height="600">
+                    <div class="carousel-caption">
+                        <h2>Autor: VaporPunk</h2>
+                        <p>También tenemos una sección de álbumes de música</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Información sobre los servicios -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Lo que conseguirá con nosotros:</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="bi bi-highlights feature-icon"></i>
+                        <h3>Arte personalizado</h3>
+                        <p class="text-center">Diseñamos piezas de arte para la portada de su álbum , merchandising o su libro! Las posibilidades son infinitas.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="bi bi-lightning-charge-fill feature-icon"></i>
+                        <h3>Consultas rápidas</h3>
+                        <p class="text-center">Consulte sobre discos, prsentaciones o alguna pieza, nosotros lo atendemos con gusto.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="bi bi-disc-fill feature-icon"></i>
+                        <h3>Venta de álbumes</h3>
+                        <p class="text-center">Puede revisar el link de productos. Ahí encontrará álbumes de música y accesorios.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="bi bi-house-fill feature-icon"></i>
+                        <h3>Entregas a domicilio</h3>
+                        <p class="text-center">Lo que compre, se lo llevamos hasta su casa en menos de 48 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Últimos lanzamientos musicales podrían ser tarjetas horizontales que cambien con una imagen y a su derecha info del album que vamos a llenar después-->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Últimos Lanzamientos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/2814_-_Birth_of_a_new_day.jpeg" class="card-img-left" alt="Album Cover" onclick="playMusic1()">
+                        <div class="card-body">
+                            <h5 class="card-title">新しい日の誕生 (Birth of a New Day)</h5>
+                            <p class="card-text">Artista: 2814 (t e l e p a t h テレパシー能力者 and HKE)</p>
+                            <p class="card-text">Género: Vaporwave, Ambient, Dreampunk</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/album-Fujii.jpg" class="card-img-left" alt="Album Cover" onclick="playMusic2()">
+                        <div class="card-body">
+                            <h5 class="card-title">Cherry Dream Machine</h5>
+                            <p class="card-text">Artista: Fujii</p>
+                            <p class="card-text">Género: Electronic, Vaporwave, Synthwave</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/Neon-Indian-VINS.png" class="card-img-left" alt="Album Cover" onclick="playMusic3()">
+                        <div class="card-body">
+                            <h5 class="card-title">Vega Intl. Night School</h5>
+                            <p class="card-text">Artista: Neon Indian</p>
+                            <p class="card-text">Género: Synth pop, Chillwave, Indie pop, Vaporwave</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/discoPorter.jpg" class="card-img-left" alt="Album Cover" onclick="playMusic4()">
+                        <div class="card-body">
+                            <h5 class="card-title">Worlds</h5>
+                            <p class="card-text">Artista: Porter Robinson</p>
+                            <p class="card-text">Género: Electrónica, Electropop</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/Macross_82-99_Cham.jfif" class="card-img-left" alt="Album Cover" onclick="playMusic5()">
+                        <div class="card-body">
+                            <h5 class="card-title">Cham!</h5>
+                            <p class="card-text">Artista: Macross 82-99</p>
+                            <p class="card-text">Género: Vaporwave, Future funk, City pop</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 flex-row music">
+                        <img src="/img/disco7Flume.jpg" class="card-img-left" alt="Album Cover" onclick="playMusic6()">
+                        <div class="card-body">
+                            <h5 class="card-title">Skin</h5>
+                            <p class="card-text">Artista: Flume</p>
+                            <p class="card-text">Género: Electrónica, Future bass, Electropop</p>
+                            <a href="catalogo.html" class="btn btn-dark">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Acordeón con info -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Arte Visual y Diseño
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Nuestro equipo de artistas digitales ofrece una amplia gama de servicios creativos:</p>
+                            <ul>
+                                <li>Diseño de portadas para álbumes y singles</li>
+                                <li>Creación de logos y identidad visual para artistas</li>
+                                <li>Arte digital para merchandising (camisetas, pósters, stickers)</li>
+                                <li>Ilustraciones personalizadas</li>
+                            </ul>
+                            <p>Cada diseño es único y personalizado según tus necesidades específicas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Música y Distribución
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Somos distribuidores especializados en música independiente y experimental:</p>
+                            <ul>
+                                <li>Venta de álbumes físicos en formatos especiales</li>
+                                <li>Ediciones limitadas y exclusivas</li>
+                                <li>Colaboraciones entre artistas visuales y músicos</li>
+                                <li>Distribución internacional</li>
+                            </ul>
+                            <p>Trabajamos directamente con los artistas para garantizar la mejor calidad en cada lanzamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Instalaciones Interactivas
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Exploramos los límites del arte digital con instalaciones generativas e interactivas:</p>
+                            <ul>
+                                <li>Arte generativo que responde a sonido y música en tiempo real</li>
+                                <li>Instalaciones interactivas para eventos y exposiciones</li>
+                                <li>Visuales reactivas para conciertos y presentaciones</li>
+                                <li>Experiencias inmersivas personalizadas</li>
+                            </ul>
+                            <p>Utilizamos tecnologías como Processing, TouchDesigner y herramientas de IA para crear experiencias únicas.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                            Merchandising Personalizado
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Convertimos el arte digital en productos tangibles:</p>
+                            <ul>
+                                <li>Diseño y producción de merchandise para artistas</li>
+                                <li>Impresión de alta calidad en diversos materiales</li>
+                                <li>Productos exclusivos y series limitadas</li>
+                                <li>Packaging personalizado para álbumes y productos</li>
+                            </ul>
+                            <p>Trabajamos con los mejores proveedores para garantizar productos de calidad premium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Obras digitales recientes -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Arte Digital Reciente</h2>
+            <div class="row" style="max-height: 500px; overflow-y: auto;">
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/paisaje2.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/gogolitus3.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/tumblr_of7pz89cp61vi4eyho1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/tumblr_o8y4sqq6bU1sdfx67o1_r1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/tumblr_poxsyrEOLh1qbgdnxo1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="/img/tumblr_ndh7tz4NU31sb5osho1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-footer">
+                            <small>Por: Kj011</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Historia -->
+        <section class="about container my-5">
+            <h2 class="text-center mb-4">Nuestra Historia</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <p class="lead">
+                        NeoDream nació en 2023 de la visión compartida de artistas digitales y músicos independientes. 
+                        Buscábamos crear un espacio donde el arte visual y sonoro pudieran coexistir y complementarse.
+                    </p>
+                    <p>
+                        Hoy, nuestro colectivo reúne a más de 20 artistas que colaboran en proyectos únicos, 
+                        desde la creación de portadas de álbumes hasta instalaciones de arte digital interactivo. 
+                        Cada obra en nuestra colección representa la fusión perfecta entre lo visual y lo auditivo.
+                    </p>
+                    <p>
+                        Además de vender música y arte digital, ofrecemos servicios personalizados para artistas 
+                        y coleccionistas que buscan algo verdaderamente único. Nuestro objetivo es seguir siendo 
+                        un puente entre estas dos formas de expresión artística.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>NeoDream es la colaboración de artistas enfocados en la música y el arte digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>nico.nsavs@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>78666971</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1 Garden Rd, Central, Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Desarrollado por Klaus Jung シ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        // JavaScript personalizado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ejemplo de funcionalidad JavaScript
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Formulario enviado con éxito!');
+            });
+        });
+    </script>
 </body>
 </html>
