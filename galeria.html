@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - NeoDream</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="logoAnimacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand ui-btn" href="index.html">
+                    <img src="/img/c42ae50f8a7c02579ac8b97dc4e6d39b.gif" alt="Logo" height="80" width="80">
+                    <span>NeoDream</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Primer carrusel -->
+        <div id="carruselPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/tumblr1.gif" class="d-block w-100" alt="Arte Digital" height="500">
+                    <div class="carousel-caption">
+                        <h2>Galería Digital</h2>
+                        <p>Explora nuestro universo de arte digital</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tumblr2.gif" class="d-block w-100" alt="Arte Digital" height="500">
+                    <div class="carousel-caption">
+                        <h2>Galería Digital</h2>
+                        <p>Explora nuestro universo de arte digital</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/tumblr_367f4bc3cf093df1ddcac09ce033f184_1474e7d9_540.gif" class="d-block w-100" alt="Arte Digital" height="500">
+                    <div class="carousel-caption">
+                        <h2>Galería Digital</h2>
+                        <p>Explora nuestro universo de arte digital</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/abstract-art-picture-gallery.jpg" class="d-block w-100" alt="Arte Digital" height="500">
+                    <div class="carousel-caption">
+                        <h2>Galería Digital</h2>
+                        <p>Explora nuestro universo de arte digital</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselPrincipal" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Primera galería -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Arte Digital</h2>
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_nzt1antWcF1qlocdoo1_400 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">cyber.lotus</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_nig476g1pL1tn3cpno1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">void_walker</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_njmwglcX0q1rkafq0o1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">_nyx.dreams_</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_pm5ehk70kI1w3y4ilo1_r2_640 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">quantum.ghost</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_ply2c8oBNz1qeyvpto1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">_nyx.dreams_</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_pq58ghpwZ21vqfnzao1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">quantum.ghost</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_oe7ur5vBNK1six59bo1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">neon.phantom</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_o2xmv97qVj1r4g3azo1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">glitch.symphony</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_pee8imkVU71uk7ohg_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">cyber.lotus</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_opq57rMOHg1sb5osho1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">void_walker</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/YD49 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">neon.phantom</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_of7q3tElgZ1vi4eyho1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">glitch.symphony</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrusel de arte generativo -->
+        <div id="carruselGenerativo" class="carousel slide" data-bs-ride="carousel">
+            <h2 class="text-center mb-4">Arte Generativo</h2>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div id="sketch1" class="p5-sketch" style="height: 400px;"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="sketch2" class="p5-sketch" style="height: 400px;"></div>
+                </div>
+                <div class="carousel-item">
+                    <div id="sketch3" class="p5-sketch" style="height: 400px;"></div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselGenerativo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselGenerativo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Segunda galería -->
+        <section class="container my-5">
+            <div class="row g-4">
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_o4x3otztuL1qeyvpto1_400 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">cyber.lotus</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_nqilsemQd21sb5osho1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">void_walker</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/tumblr_ojjh34aT151tcarlro1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">echo.pulse</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/original (3).gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">pixel.dreamer</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/08hz9w1avt7a1.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">neural.wave</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_prazcvv0Ku1w3y4ilo2_r1_540 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">cosmic.byte</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card art-card-alt">
+                        <img src="img/giphy (8).gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">neural.wave</h5>
+                            <button class="btn like-btn" data-art-id="1">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card art-card">
+                        <img src="img/tumblr_nmb2kfgW9h1s4fz4bo1_500 - copia.gif" class="card-img-top" alt="Arte Digital">
+                        <div class="card-body">
+                            <h5 class="card-title">cosmic.byte</h5>
+                            <button class="btn like-btn" data-art-id="2">
+                                <i class="bi bi-heart"></i>
+                                <span class="like-count">0</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>NeoDream es la colaboración de artistas enfocados en la música y el arte digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>nico.nsavs@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>78666971</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1 Garden Rd, Central, Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Desarrollado por Klaus Jung シ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+     <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="galeria.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

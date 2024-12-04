@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neodream - Catálogo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="logoAnimacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="catalogo1.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand ui-btn" href="index.html">
+                    <img src="/img/dc2a0c_473095e559ed43ffbcd1b154d3284d70.gif" alt="Logo" height="80" width="80">
+                    <span>NeoDream</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart">
+                        <div class="container-cart-icon">
+                            <i class="bi bi-bag-plus icon-cart"></i>
+                            <div class="count-products">
+                                <span id="contador-productos">0</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Toast -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="productToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="fas fa-check-circle text-success me-2"></i>
+                <strong class="me-auto">Notificación</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                Producto añadido al carrito.
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrito offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Carrito de Compras</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container-cart-products hidden-cart">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">Cant.</span>
+                        <p class="titulo-producto-carrito">Producto</p>
+                        <span class="precio-producto-carrito">Precio/Uni</span>
+                    </div>
+                </div>
+                <div class="row-product hidden">
+                    <div class="cart-product">
+                        <div class="info-cart-product">
+                            <span class="cantidad-producto-carrito">1</span>
+                            <p class="titulo-producto-carrito">Zapatos Nike</p>
+                            <span class="precio-producto-carrito">$80</span>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon-close"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M6 18L18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <div class="cart-total">
+                        <h3>Total:</h3>
+                        <span class="total-pagar">$0.00</span>
+                    </div>
+                    <p class="cart-empty"></p>
+                    <button class="btn btn-dark w-100">Proceder al pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <!-- Filtros -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar productos...">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>Filtrar por categoría</option>
+                    <option>Álbum CD</option>
+                    <option>Álbum vinilo</option>
+                    <option>Accesorios</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select class="form-select">
+                    <option>Ordenar por</option>
+                    <option>Precio: Menor a Mayor</option>
+                    <option>Precio: Mayor a Menor</option>
+                    <option>Más Populares</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Productos -->
+        <div class="row g-3 container-items">
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="borde-gradiente">
+                    <div class="card h-100 card-hover">
+                        <img src="img/2814_-_Birth_of_a_new_day.jpeg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">新しい日の誕生 (Birth of a New Day)</h5>
+                            <p class="card-text">Autor: 2814 (t e l e p a t h テレパシー能力者 and HKE) <br>
+                                Lanzamiento: 21 de enero de 2015 <br>
+                                Géneros: Vaporwave, Ambient, Dreampunk</p>
+                            <div class="d-flex justify-content-between align-items-center info-product">
+                                <h2 class="card-title hidden">新しい日の誕生</h2>
+                                <p class="h5 mb-0 price">$20.50</p>
+                                <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="img/Neon-Indian-VINS.png" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Vega Intl. Night School</h5>
+                        <p class="card-text">Autor: Neon Indian <br>
+                            Lanzamiento: 16 de octubre de 2015 <br>
+                            Géneros: Synth pop, Chillwave, Indie pop, Vaporwave</p>
+                        <div class="d-flex justify-content-between align-items-center info-product">
+                            <h2 class="card-title hidden">Vega Intl. N. S.</h2>
+                            <p class="h5 mb-0 price">$15.00</p>
+                            <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="/img/disco7Flume.jpg" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Skin</h5>
+                        <p class="card-text">Autor: Flume <br>
+                            Lanzamiento: 30 de marzo de 2015 <br>
+                            Géneros: Electrónica, Future bass, Electropop</p>
+                            <div class="d-flex justify-content-between align-items-center info-product">
+                                <h2 class="card-title hidden">Skin</h2>
+                                <p class="h5 mb-0 price">$24.50</p>
+                                <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                    <i class="fas fa-cart-plus"></i> Añadir
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 4 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="img/Macross_82-99_Cham.jfif" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Cham!</h5>
+                        <p class="card-text">Autor: Macross 82-99 <br>
+                            Lanzamiento: 15 de octubre de 2016 <br>
+                            Géneros: Vaporwave, Future funk, City pop</p>
+                        <div class="d-flex justify-content-between align-items-center info-product">
+                            <h2 class="card-title hidden">Cham!</h2>
+                            <p class="h5 mb-0 price">$18.50</p>
+                            <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="/img/disco10Flume.webp" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyperreal</h5>
+                        <p class="card-text">Autor: Flume <br>
+                            Lanzamiento: 30 de marzo de 2015 <br>
+                            Géneros: Electrónica, Future bass, Electropop</p>
+                        <div class="d-flex justify-content-between align-items-center info-product">
+                            <h2 class="card-title hidden">Hyperreal</h2>
+                            <p class="h5 mb-0 price">$24.50</p>
+                            <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="/img/discoPorter.jpg" class="card-img-top" alt="Producto 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Worlds</h5>
+                        <p class="card-text">Autor: Porter Robinson<br>
+                            Lanzamiento: 12 de agosto de 2014 <br>
+                            Géneros: Electrónica, Future bass, Electropop</p>
+                        <div class="d-flex justify-content-between align-items-center info-product">
+                            <h2 class="card-title hidden">Worlds</h2>
+                            <p class="h5 mb-0 price">$14.50</p>
+                            <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 5 -->
+            <div class="col-md-4">
+                <div class="card h-100 card-hover">
+                    <img src="/img/album-Fujii.jpg" class="card-img-top" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Cherry Dream Machine</h5>
+                        <p class="card-text">Autor: Fujii<br>
+                            Lanzamiento: 5 de diciembre de 2018 <br>
+                            Géneros: Electronic, Vaporwave, Synthwave</p>
+                        <div class="d-flex justify-content-between align-items-center info-product">
+                            <h2 class="card-title hidden">Cherry Dream Machine</h2>
+                            <p class="h5 mb-0 price">$33.00</p>
+                            <button class="btn btn-dark btn-add-cart" onclick="addToCart(2)">
+                                <i class="fas fa-cart-plus"></i> Añadir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>NeoDream es la colaboración de artistas enfocados en la música y el arte digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>nico.nsavs@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>78666971</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1 Garden Rd, Central, Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Desarrollado por Klaus Jung シ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="catalogo.js"></script>
+    <script>
+        // Función para añadir al carrito
+        function addToCart(productId) {
+            // Mostrar toast
+            const toast = new bootstrap.Toast(document.getElementById('productToast'));
+            toast.show();
+
+            // Aquí iría la lógica real del carrito
+            console.log(`Producto ${productId} añadido al carrito`);
+        }
+    </script>
+</body>
+</html>

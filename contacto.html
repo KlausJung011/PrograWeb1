@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neodream - Contacto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="logoAnimacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand ui-btn" href="index.html">
+                    <img src="/img/Eb2H.gif" alt="Logo" height="80" width="80">
+                    <span>NeoDream</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Toast -->
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="formToast" class="toast" role="alert">
+                <div class="toast-header bg-success text-white">
+                    <i class="fas fa-check-circle me-2"></i>
+                    <strong class="me-auto">¡Éxito!</strong>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body">
+                    Hemos recibido tu mensaje, ¡gracias por contactarnos!
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulario de contacto -->
+        <section class="container my-5 col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Déjanos tu consulta sobre música o arte digital</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-dark">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Encuesta usuarios -->
+        <section class="container my-5 col-md-6">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4">Cuéntanos tus preferencias</h2>
+                    <form id="userSurvey">
+                        <div class="mb-3">
+                            <label class="form-label">Nombre completo:</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Edad</label>
+                            <select class="form-select" required>
+                                <option value="">Rango de edad</option>
+                                <option>18-25</option>
+                                <option>26-35</option>
+                                <option>36-45</option>
+                                <option>46+</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Género</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" required>
+                                <label class="form-check-label">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" required>
+                                <label class="form-check-label">Femenino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" required>
+                                <label class="form-check-label">Prefiero no decir</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">¿Con qué frecuencia usas nuestros servicios?</label>
+                            <select class="form-select" required>
+                                <option value="">Seleccione una opción</option>
+                                <option>Diariamente</option>
+                                <option>Semanalmente</option>
+                                <option>Mensualmente</option>
+                                <option>Raramente</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">¿Qué géneros de música y arte digital disfrutas más? (Selecciona todas las que apliquen)</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Vaporwave</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Synthwave</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Retrowave</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Glitch Art</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Otro</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">¿Qué tan satisfecho estás con nuestros servicios?</label>
+                            <div class="btn-group w-100" role="group">
+                                <input type="radio" class="btn-check" name="satisfaction" id="sat1" required>
+                                <label class="btn btn-outline-primary" for="sat1">1</label>
+                                <input type="radio" class="btn-check" name="satisfaction" id="sat2">
+                                <label class="btn btn-outline-primary" for="sat2">2</label>
+                                <input type="radio" class="btn-check" name="satisfaction" id="sat3">
+                                <label class="btn btn-outline-primary" for="sat3">3</label>
+                                <input type="radio" class="btn-check" name="satisfaction" id="sat4">
+                                <label class="btn btn-outline-primary" for="sat4">4</label>
+                                <input type="radio" class="btn-check" name="satisfaction" id="sat5">
+                                <label class="btn btn-outline-primary" for="sat5">5</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Comentarios adicionales</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-dark" id="submitBtn">
+                                Enviar<i class="fas fa-paper-plane ms-2"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botón ayuda -->
+        <div class="floating-help">
+            <button type="button" class="btn btn-primary rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#helpOffcanvas">
+                <i class="fas fa-question"></i>
+            </button>
+        </div>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end" id="helpOffcanvas">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Ayuda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="accordion" id="helpAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#help1">
+                                ¿Cómo funciona la encuesta?
+                            </button>
+                        </h2>
+                        <div id="help1" class="accordion-collapse collapse show" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                La encuesta está dividida en varias secciones. Completa cada sección y usa los botones de navegación para avanzar.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#help2">
+                                ¿Son obligatorias todas las preguntas?
+                            </button>
+                        </h2>
+                        <div id="help2" class="accordion-collapse collapse" data-bs-parent="#helpAccordion">
+                            <div class="accordion-body">
+                                Solo las preguntas marcadas con * son obligatorias. Las demás son opcionales.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>NeoDream es la colaboración de artistas enfocados en la música y el arte digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>nico.nsavs@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>78666971</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1 Garden Rd, Central, Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Desarrollado por Klaus Jung シ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Lógica para mostrar el toast al enviar el formulario
+            document.getElementById('contactForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var toast = new bootstrap.Toast(document.getElementById('formToast'));
+                toast.show();
+                this.reset();
+            });
+    </script>
+</body>
+</html>
+    

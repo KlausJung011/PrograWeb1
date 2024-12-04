@@ -1,0 +1,77 @@
+
+body {
+    background-color:midnightblue !important;
+    color: wheat !important;
+}
+
+/* Estilos para las tarjetas de arte */
+.art-card {
+    transition: transform 0.3s ease;
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+.art-card:hover {
+    transform: translateY(-5px);
+}
+
+.art-card-alt {
+    background: #2a2a2a;
+}
+
+.art-card .card-body {
+    padding: 1rem;
+    color: #fff;
+}
+
+.like-btn {
+    border: none;
+    background: transparent;
+    color: #ff4d6d;
+    transition: transform 0.2s ease;
+}
+
+.like-btn:hover {
+    transform: scale(1.1);
+}
+
+.like-btn.active i {
+    color: #ff4d6d;
+    fill: #ff4d6d;
+}
+
+/* Sketches p5.js */
+.p5-sketch {
+    width: 100%;
+    background: #000;
+}
+
+/* Footer */
+
+footer {
+    background-color:wheat;
+    color: midnightblue;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer a { 
+    text-decoration: none;
+    background-image: linear-gradient(to right, #FF8437, indigo);
+    color: transparent;
+    background-clip: text;
+    font-family: 'Natural Precision', monospace;
+}
+footer a:link {
+    color: transparent;
+    background-clip: text;
+}
+footer a:hover {
+    background-image: linear-gradient(to right, indigo, #FF8437);
+    color: transparent;
+    background-clip: text;
+}
+
+.hidden{
+    display: none;
+}

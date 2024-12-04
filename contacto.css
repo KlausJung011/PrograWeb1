@@ -1,0 +1,80 @@
+
+@font-face {
+
+    font-family: 'Natural Precision';
+    
+    src: url('fonts/Natural\ Precision.otf');
+    
+}
+body {
+    background-color:midnightblue !important;
+}
+
+.card {
+    /*background: linear-gradient(to bottom right, #FF8437, midnightblue);
+    background: linear-gradient(145deg, transparent 35%,#FF8437, #40c9ff);
+    background: linear-gradient(145deg, transparent 35%,red,orange,yellow,green,blue,indigo,violet);
+    padding: 1rem;*/
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, midnightblue, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,red,orange,yellow,green,blue,indigo,violet) border-box;
+    border: 4px solid transparent;
+    padding: 0px 0px;
+    font-family: inherit;
+    color: white;
+}
+
+.card-body {
+    background-image: linear-gradient(to right, #FF8437, wheat);
+    color: transparent;
+    background-clip: text;
+}
+
+.btn-dark {
+    background-color: indigo;
+    border-color: #FF8437;
+    color: wheat;
+}
+
+.btn-dark:hover {
+    background-color: wheat;
+    border-color: indigo;
+    color: indigo;
+}
+
+.floating-help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Footer */
+
+footer {
+    background-color:wheat;
+    color: midnightblue;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer a { 
+    text-decoration: none;
+    background-image: linear-gradient(to right, #FF8437, indigo);
+    color: transparent;
+    background-clip: text;
+    font-family: 'Natural Precision', monospace;
+}
+footer a:link {
+    color: transparent;
+    background-clip: text;
+}
+footer a:hover {
+    background-image: linear-gradient(to right, indigo, #FF8437);
+    color: transparent;
+    background-clip: text;
+}
+
+.hidden{
+    display: none;
+}

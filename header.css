@@ -1,0 +1,53 @@
+/* Header */
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-toggler {
+    padding: 0 0 1 0;
+}
+.fa-cubes {
+    background-image: linear-gradient(to right, #FF8437, wheat, indigo);
+    color: transparent;
+    background-clip: text;
+    font-size:1.6em;
+}
+
+
+.navbar-brand {
+    font-size: 1.8em;
+    padding: 0 0 0 0;
+    background-image: linear-gradient(to right, #FF8437, indigo);
+    color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    font-family: 'Natural Precision', monospace;
+}
+
+.navbar-brand:link {
+    color: transparent;
+    background-clip: text;
+}
+.navbar-brand:hover {
+    color: transparent;
+    background-clip: text;
+}
+
+.nav-link {
+    background-image: linear-gradient(to right, #FF8437, indigo);
+    color: transparent;
+    background-clip: text;
+    font-family: 'Natural Precision', monospace;
+    font-size: 1rem;
+}
+
+.nav-link:link {
+    color: transparent;
+    background-clip: text;
+}
+.nav-link:hover {
+    background-image: linear-gradient(to right, indigo, #FF8437);
+    color: transparent;
+    background-clip: text;
+}

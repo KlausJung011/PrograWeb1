@@ -1,0 +1,128 @@
+
+
+@font-face {
+
+    font-family: 'Natural Precision';
+    
+    src: url('fonts/Natural\ Precision.otf');
+    
+}
+
+body {
+    background-color:midnightblue !important;
+    color: wheat !important;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace;
+}
+
+.btn-dark {
+    background-color: indigo;
+    border-color: #FF8437;
+    color: wheat;
+}
+
+.btn-dark:hover {
+    background-color: wheat;
+    border-color: indigo;
+    color: indigo;
+}
+
+
+.btn-outline-dark {
+    border-color: #FF8437;
+    color: #FF8437;
+}
+
+.btn-outline-dark:hover {
+    background-color: #23272b;
+    border-color: #343a40;
+    color: wheat;
+}
+
+.card {
+    /*background: linear-gradient(to bottom right, #FF8437, midnightblue);
+    background: linear-gradient(145deg, transparent 35%,#FF8437, #40c9ff);
+    background: linear-gradient(145deg, transparent 35%,red,orange,yellow,green,blue,indigo,violet);
+    padding: 1rem;*/
+    background: linear-gradient(to bottom right, midnightblue, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,red,orange,yellow,green,blue,indigo,violet) border-box;
+    border: 4px solid transparent;
+    padding: 0px 0px;
+    font-family: inherit;
+    color: white;
+}
+
+.card-body {
+    background-image: linear-gradient(to right, #FF8437, wheat);
+    color: transparent;
+    background-clip: text;
+}
+
+.music img {
+    width: 200px; 
+    object-fit: cover;
+}
+
+small {
+    color: wheat;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: brown;
+    background-image: linear-gradient(to right bottom, #FF8437, wheat);
+    color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+/* Acordeón */
+.accordion-item {
+    background-color: #1a1a1a;
+    border: 1px solid indigo;
+}
+
+.accordion-button {
+    background-image: linear-gradient(to right bottom, #1a1a1a, midnightblue);
+    color: wheat;
+}
+
+/* Cuando el botón está colapsado */
+.accordion-button.collapsed {
+    background-color: #2a2a2a;
+    color: wheat;
+}
+
+/* Cuando el botón no está colapsado */
+.accordion-button:not(.collapsed) {
+    background-color: indigo; /* Un poco más claro cuando está activo */
+    color: #FF8437;
+}
+
+
+/* Contenido del acordeón */
+.accordion-body {
+    background-color: wheat;
+    color: indigo;
+}
+
+
+.accordion-body ul {
+    padding-left: 20px;
+    color: indigo;
+}
+
+.accordion-body li {
+    margin-bottom: 8px;
+}
+
+.accordion-button:hover {
+    background-color: midnightblue;
+}
+
+/* Esto es para quitar el outline de Bootstrap */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(255,255,255,0.125);
+}
+
+
