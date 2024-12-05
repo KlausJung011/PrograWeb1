@@ -1,0 +1,53 @@
+@font-face {
+
+    font-family: 'Natural Precision';
+    
+    src: url('fonts/Natural\ Precision.otf');
+    
+}
+
+body {
+    background-color:midnightblue !important;
+    color: wheat !important;
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, monospace;
+}
+
+.btn-dark {
+    background-color: indigo;
+    border-color: #FF8437;
+    color: wheat;
+}
+
+.btn-dark:hover {
+    background-color: wheat;
+    border-color: indigo;
+    color: indigo;
+}
+
+
+.btn-outline-dark {
+    border-color: #FF8437;
+    color: #FF8437;
+}
+
+.btn-outline-dark:hover {
+    background-color: #23272b;
+    border-color: #343a40;
+    color: wheat;
+}
+
+#generative-art-container {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover;
+}

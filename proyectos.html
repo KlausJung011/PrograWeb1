@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDream - Proyectos generativos</title>
+    <link rel="shortcut icon" href="img/bank_of_china_tower_logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="proyectos.css">
+    <link rel="stylesheet" href="logoAnimacion.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand ui-btn" href="index.html">
+                    <img src="img/paisaje1.gif" alt="Logo" height="80" width="80">
+                    <span>NeoDream</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalogo.html">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="flex flex-col items-center justify-center h-screen">
+            <h1 class="text-4xl font-bold m-4">Proyectos de arte generativo en desarrollo...</h1>
+            <h2 class="text-4xl font-bold m-4">Oprima los botones para verlos:</h2>
+            <div class="flex space-x-4 m-4 flex-wrap justify-center">
+              <button id="btn-sketch1" class="btn btn-dark btn-lg mx-2">Sketch 1</button>
+              <button id="btn-sketch2" class="btn btn-dark btn-lg mx-2">Sketch 2</button>
+              <button id="btn-sketch3" class="btn btn-dark btn-lg mx-2">Sketch 3</button>
+              <button id="btn-sketch4" class="btn btn-dark btn-lg mx-2">Sketch 4</button>
+              <button id="btn-sketch5" class="btn btn-dark btn-lg mx-2">Sketch 5</button>
+            </div>
+            
+        </div>
+        <div id="generative-art-container" class="h-[60vh] bg-gray-200 shadow-lg"></div>
+    </main>    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nosotros</h5>
+                    <p>NeoDream es la colaboración de artistas enfocados en la música y el arte digital.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="contacto.html">Consultas</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-envelope me-2"></i>nico.nsavs@gmail.com</li>
+                        <li><i class="fas fa-phone me-2"></i>78666971</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i>1 Garden Rd, Central, Hong Kong</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Desarrollado por Klaus Jung シ</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="proyectos.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
