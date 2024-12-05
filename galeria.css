@@ -4,6 +4,11 @@ body {
     color: wheat !important;
 }
 
+/* Carrusel */
+#carruselPrincipal .carousel-item img {
+    object-fit: cover;
+}
+
 /* Estilos para las tarjetas de arte */
 .art-card {
     transition: transform 0.3s ease;
