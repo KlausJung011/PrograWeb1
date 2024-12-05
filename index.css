@@ -38,6 +38,11 @@ body {
     color: wheat;
 }
 
+/* Carrusel */
+.carousel-item img {
+    object-fit: cover;
+}
+
 .card {
     /*background: linear-gradient(to bottom right, #FF8437, midnightblue);
     background: linear-gradient(145deg, transparent 35%,#FF8437, #40c9ff);
