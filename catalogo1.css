@@ -177,6 +177,62 @@ img{
     background-clip: text;
 }
 
+/* Botón play */ 
+
+.play-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+}
+  
+.play-container .play {
+    position: absolute;
+    animation: keyframes-fill .5s;
+}
+  
+.play-container .pause {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+}
+  
+.play-container input:checked ~ .play {
+    display: none;
+}
+  
+.play-container input:checked ~ .pause {
+    display: block;
+}
+  
+.play-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Animación */
+@keyframes keyframes-fill {
+    0% {
+      transform: rotate(-180deg) scale(0);
+      opacity: 0;
+    }
+  
+    50% {
+      transform: rotate(-10deg) scale(1.2);
+    }
+}
+
 /* Filtros */
 .input-group {
     display: flex;
