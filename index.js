@@ -1,4 +1,3 @@
-
 //Reproductores de música
 
 var audio1 = new Audio('audio/2814 - 恢复.mp3');
@@ -24,7 +23,7 @@ function playMusic2() {
         audio2.pause();
     } else {
         audio2.play();
-        audio2.volume = 0.3;
+        audio2.volume = 0.25;
     }
     isPlaying2 = !isPlaying2;
 }
@@ -80,3 +79,50 @@ function playMusic6() {
     }
     isPlaying6 = !isPlaying6;
 }
+
+var audio7 = new Audio('audio/Flume - Hyperreal feat. Kučka.mp3');
+var isPlaying7 = false;
+
+function playMusic7() {
+    if (isPlaying7) {
+        audio7.pause();
+    } else {
+        audio7.play();
+        audio7.volume = 0.4;
+    }
+    isPlaying7 = !isPlaying7;
+}
+
+// Agregar event listeners para cuando la canción termine
+audio1.addEventListener('ended', function() {
+    isPlaying1 = false;
+    document.querySelector('.card:nth-child(1) input[type="checkbox"]').checked = false;
+});
+
+audio2.addEventListener('ended', function() {
+    isPlaying2 = false;
+    document.querySelector('.card:nth-child(2) input[type="checkbox"]').checked = false;
+});
+audio3.addEventListener('ended', function() {
+    isPlaying3 = false;
+    document.querySelector('.card:nth-child(3) input[type="checkbox"]').checked = false;
+});
+
+audio4.addEventListener('ended', function() {
+    isPlaying4 = false;
+    document.querySelector('.card:nth-child(4) input[type="checkbox"]').checked = false;
+});
+audio5.addEventListener('ended', function() {
+    isPlaying5 = false;
+    document.querySelector('.card:nth-child(5) input[type="checkbox"]').checked = false;
+});
+
+audio6.addEventListener('ended', function() {
+    isPlaying6 = false;
+    document.querySelector('.card:nth-child(6) input[type="checkbox"]').checked = false;
+});
+
+audio7.addEventListener('ended', function() {
+    isPlaying7 = false;
+    document.querySelector('.card:nth-child(7) input[type="checkbox"]').checked = false;
+});
